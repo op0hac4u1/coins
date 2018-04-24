@@ -1,16 +1,8 @@
 #encoding:  UTF-8
 
 require 'sinatra'
-require './block'
 require 'sinatra/reloader'
 
-get '/dog' do
-	"<h1>dog</h1>"
-end
-
-get '/eat' do
-	"<h1>dog</h1>"
-end
 
 class Dog
 
@@ -20,20 +12,20 @@ class Dog
  end
 
  def my_weight
- 	puts "햔제몸무게 : " + @weight.to_s
+ 	@weight.to_s
  end
 
  def eat
  	@weight = @weight + 0.5
- 	puts "먹는다"
+ 	
  end
 
  def run 
- 	puts "뛴다."
+ 	
  end
 
  def walk
- 	puts "걷는다."
+ 	
  end
 
 end

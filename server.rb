@@ -6,12 +6,18 @@ require './block'
 
 aaaaa = Dog.new
 
+
+get '/' do
+	"dog" + aaaaa.my_weight
+end
+
 get '/dog' do
 	"<h1>dog</h1>"
 end
 
 get '/eat' do
-	"<h1>dog</h1>"
+	aaaaa.eat
+	"먹었음"
 end
 
 get '/mining' do
