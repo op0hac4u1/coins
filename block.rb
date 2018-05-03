@@ -37,6 +37,9 @@ class Blockchain
 
 	end
 
+	def wallet_list 
+		@wallet
+	end
 
 	def make_a_wallet
 		address = SecureRandom.uuid.gsub("-","")
